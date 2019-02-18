@@ -482,7 +482,7 @@ func createLoadgen(name string, numProducers int32) *appsv1.ReplicaSet {
 						Resources: v1.ResourceRequirements{
 							Limits: v1.ResourceList{
 								v1.ResourceCPU:    resource.MustParse("50m"),
-								v1.ResourceMemory: resource.MustParse("10Mi"),
+								v1.ResourceMemory: resource.MustParse("25Mi"),
 							},
 						},
 					}},
